@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DURIAN KING</title>
+    <!--style css eksternal-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--style logo css font awesome import all cssnya dahulu dari cdn font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- tambahkan cdn jquery untuk menambahkan script agar ketika loader jalan web tampil -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Loader -->
+    <div class="bg-loader">
+        <div class="loader"></div>
+    </div>
+    <!--Header-->
+    <div class="medsos">
+        <div class="container">
+            <ul>
+                <!--untuk logo stlah import dari font awesome,cari logo yang diinginkan kmudian copy-->
+                <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                <div class="login">
+                    <li><i class="fas fa-user-circle"> <a href="#"></a> </i></li>
+                    <li><i class="fas fa-sign-out-alt"> <a href="login.html">Login<a></i></li>
+                    </div>
+            </ul>
+        </div>
+    </div>
+    <header> 
+        <div class="container">
+            <div>
+                <h1 style="font-family: calibri;"><img src="durian king.jpeg" alt="durian king" width="40px" valign="top"><a href="home.html"> DURIAN KING</h1></a>
+            </div> 
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a  href="about.html">ABOUT</a></li>
+                <li><a href="product.html">PRODUCT</a></li>
+                <li><a class="active" href="contact.html ">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+<!-- LABEL KONTAK -->
+<section class="label">
+    <div class="container">
+        <p>CONTACT</p>
+    </div>
+
+</section>
+
+
+<!-- KONTAK -->
+
+<section class="service2">
+<div class="container">
+    <h3>CONTACT INFO</h3>
+        <div class="box">
+            <div class="col-4">
+                <h4>Address</h4>
+                <p>Jl. Raya Tanggayuda</p>
+            </div>
+            <div class="col-4">
+                <h4>Email</h4>
+                <p>durianking13@gmail.com</p>
+            </div>
+            <div class="col-4">
+                <h4>Telp</h4>
+                <p>(0361) 9</p>
+            </div>
+            <div class="col-4">
+                <h4>Hp</h4>
+                <p>08999999999</p>
+            </div>
+        </div>
+        <iframe src="https://www.google.co.id/maps/place/Jl.+Raya+Kedewatan+42-48,+Kedewatan,+Kecamatan+Ubud,+Kabupaten+Gianyar,+Bali+80572/@-8.4577018,115.2429913,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd222e51c4df695:0x4dc59072ead20567!8m2!3d-8.4577071!4d115.2455716!16s%2Fg%2F11g61lgd23?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D" 
+        width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+</section>
+    
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <small> Copyright &copy; 2024 - I Wayan Yoga Arthawan. All Rights Reserved</small>
+        </div>
+    </footer>
+<!-- script untuk menghilangkan loading agar halaman utama terbuka "apabila document sudah ready maka fungsi pada class bg loader di hide"-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".bg-loader").hide()
+        })
+    </script>
+
+
+</body>
+
+
+</html>

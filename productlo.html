@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DURIAN KING</title>
+    <!--style css eksternal-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--style logo css font awesome import all cssnya dahulu dari cdn font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- tambahkan cdn jquery untuk menambahkan script agar ketika loader jalan web tampil -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Loader -->
+    <div class="bg-loader">
+        <div class="loader"></div>
+    </div>
+    <!--Header-->
+    <div class="medsos">
+        <div class="container">
+            <ul>
+                <!--untuk logo stlah import dari font awesome,cari logo yang diinginkan kmudian copy-->
+                <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                <div class="login">
+                    <li><i class="fas fa-user-circle"> <a href="#">User</a> </i></li>
+                    <li><i class="fas fa-sign-out-alt"> <a href="product.html">Logout<a></i></li>
+                    </div>
+            </ul>
+        </div>
+    </div>
+    <header> 
+        <div class="container">
+            <div>
+                <h1 style="font-family: calibri;"><img src="durian king.jpeg" alt="durian king" width="40px" valign="top"><a href="homelo.html"> DURIAN KING</h1></a>
+            </div> 
+            <ul>
+                <li><a href="homelo.html">HOME</a></li>
+                <li><a  href="aboutlo.html">ABOUT</a></li>
+                <li><a class="active" href="productlo.html">PRODUCT</a></li>
+                <li><a href="contactlo.html ">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- label service -->
+    <section class="label">
+        <div class="container">
+            <p>PRODUCT</p>
+        </div>
+
+    </section>
+
+    <div class="product">
+        <br><br>
+        <h1 align="Center">PRODUCT KAMI :</h1>
+        <br><br><br><br><br><br><br>
+    <table cellpadding="0" cellspacing="5" >
+        <tr>
+            <td><figure>
+                <img src="product/esdurian.jpg" alt="gambar es durian" width="300" height="250">
+                <figcaption><strong>1.ES DURIAN</strong></figcaption>
+                </figure>
+            </td>
+            <td>
+                <figure>
+                <img src="product/kue.jpg" alt="kue durian" width="300" height="250">
+                <figcaption><strong>2.Kue Dadar DURIAN</strong></figcaption>
+                </figure></td>
+            <td>
+                <figure>
+                <img src="product/nasgor1.jpeg" alt="kue durian" width="300" height="250">
+                <figcaption><strong>3.NasiGoreng DURIAN</strong></figcaption>
+                </figure>
+            </td>
+            <td>
+                    <figure>
+                    <img src="product/brownis.jpg" alt="kue durian" width="300" height="250">
+                    <figcaption><strong>4.Brownis DURIAN</strong></figcaption>
+                    </figure>
+            </td>
+            <td>
+                <figure>
+                <img src="sop.jpg" alt="kue durian" width="300" height="250">
+                <figcaption><strong>5.Sop DURIAN</strong></figcaption>
+                </figure>
+        </td>
+            
+        </tr>
+        
+    </table>
+    
+<!-- service -->
+
+<section class="service">
+    <div class="container">
+        <h3>SERVICE</h3>
+        <div class="box">
+            <div class="col-4">
+                <div class="icon"><i class="fas fa-mobile"></i></div>
+                <h4>MOBILE APP</h4>
+            </div>
+            <div class="col-4">
+                <div class="icon"><i class="fas fa-globe"></i></div>
+                <h4>WEBSITE</h4>
+            </div>
+            <div class="col-4">
+                <div class="icon"><i class="fas fa-truck"></i></div>
+                <h4>DELIVERY</h4>
+            </div>
+            <div class="col-4">
+                <div class="icon"><i class="fas fa-store"></i></div>
+                <h4>STORE</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <small> Copyright &copy; 2024 - I Wayan Yoga Arthawan. All Rights Reserved</small>
+        </div>
+    </footer>
+<!-- script untuk menghilangkan loading agar halaman utama terbuka "apabila document sudah ready maka fungsi pada class bg loader di hide"-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".bg-loader").hide()
+        })
+    </script>
+
+
+</body>
+
+
+</html>

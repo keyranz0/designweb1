@@ -1,0 +1,259 @@
+/* untuk mengatur sluruh elemen padding dan margin 0*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+
+}
+/* untuk memberi color inherit dan dekorasi pada tag a*/
+a{
+    color:inherit;
+    text-decoration: none;
+}
+/* untuk mengatur padding dan bgcolor pada class medsos*/
+.medsos{
+    padding: 6px;
+    background-color:#06b6c9;
+}
+/* untuk mengatur tag li pada ul yang ada pada klas medsos display berfungsi mengatur tampilan menjadi inline / 1 baris*/
+.medsos ul li{
+    display: inline-block;
+    color:white;
+    margin-right:40px;
+
+}
+.medsos .login{
+    float: right;
+}
+/*css mengatur class container */
+.container{
+    width: 80%;
+    margin: 2px 12%;
+    
+}
+/* membuat text align center pada class container h1 */
+.container h1{
+    text-align:Center;
+}
+/* container mengikuti isi pseudo class after yaitu elemen semu setelah elemen utama */
+.container::after{
+    content:'';
+    display: block;
+    clear:both;
+
+}
+/* mengatur header*/
+
+/* mengatur h1 pada header*/
+header h1{
+    float: left;
+    padding: 15px 0;
+    color: #06b6c9;
+
+}
+/*Mengatur rata kanan dan border pada tag <ul> dalam tag header float agar konten berada di sebelah kanan*/
+header ul{
+   
+    float: right;
+}
+/*Mengatur block agar inline*/
+header ul li{
+    display: inline-block;
+}
+/*memberi padding pada tag a pada li ul header*/
+header ul li a{
+    padding: 25px 20px;
+    display: inline-block;
+}
+/*memberi perubahan warna pada saat menyentuh home about service contact dengan hover*/
+header ul li a:hover{
+    background-color:darkgray;
+    color:white;
+}
+/*memberi warna background pada class active yaitu home about service contact*/
+.active{
+    background: #06b6c9 ;
+}
+/*style mengatur banner beserta gambar position relative berarti posisi menyesuaikan wadah div*/
+.banner{
+    height: 70vh;
+    background-image: url('banerdurian.jpg');
+    background-size:cover;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+}
+/*style mengatur banner setelah elemen utama dengan after membuat gambar transparan after berarti elemen setelah class baner , after=pseudoclass*/
+.banner:after{
+    content:'';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(6, 182, 201, .4) ;
+
+}
+/*membuat warna h2 pada baner putih dan beada dilapisan depan z index membuat conten berada di layer 1*/
+.banner h2{
+    color: white;
+    z-index: 1;
+    padding: 20px 30px;
+    border: 5px solid white;
+
+}
+/*memberi padding atau jarak conten ke border atas bawah 50px dan kiri kanan 0px*/
+section{
+    padding:50px 0 ;
+    
+}
+/* mengatur h3 pada section dihalaman about */
+section h3{
+    text-align:center;
+    padding:20px 0;
+    color:#06b6c9;
+    margin-bottom:25px;
+
+}
+/* mebambahkan background */
+.about{
+    padding-bottom: 100px;
+    background-image: url(bg2.png);
+}
+/* setting paragraf pada class about word spacing jarak anatara kata, line spacing jarak antara baris*/
+.about p{
+    color: 666;
+    line-height: 25px;
+    word-spacing: 2px;
+    margin-bottom:50px ;
+}
+/* tambahkan video perusahaan atur ukuran dan letaknya */
+video{
+    width: 480px;
+    margin-left: 34%;
+    margin-bottom: 50px;
+}
+/* sett bg pada class service h3 */
+.service{
+    background-color: #f9f9f9;
+    padding-bottom: 50px;
+}
+.service2{
+    background-image: url(bg2.png);
+}
+.product table{
+    margin: auto;
+    margin-bottom: 150px;
+}
+.product{
+    background-image: url(bg2.png);
+}
+/* setting class box */
+
+.box{
+    color: #06b6c9;
+}
+/* setting bagian colom tiap service agar rapih pada class box menggunakan after jadi setelah elemen utama ada elemen after */
+.box::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/* setting class col-4 yang ada pada class box(setting icon service) box-sizing untuk membuat ukuran div tetap tidak berubah*/
+.box .col-4{
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+}
+/* setting class icon border radius agar border menjadi lingkaran , line height jarak antara baris*/
+.icon{
+    width:70px;
+    height: 70px;
+    border: 1px solid;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+    margin: auto;
+    
+}
+/* setting h4 pada class box*/
+.box .col-4 h4{
+    padding: 12px 0;
+    margin: 20px ;
+}
+/* mengatur halaman footer  */
+footer{
+    padding:25px 0;
+    background-color: #333;
+    color: white;
+    text-align:Center;
+}
+/* mengatur class bg-loader ,flex digunakan agar .bg-loader bisa mengatur div didalamnya, justify content dan align item digunakan agar konten berada ditengah a;ias konten yang ada didalam bg-loader*/
+.bg-loader{
+    background-color: #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* mengatur loader class mengatur logo loading screen  animation digunakan membuat gambar seolah bergerak*/
+.bg-loader .loader{
+    width: 100px;
+    height:100px;
+    border:3px solid #fff; 
+    border-radius: 50%;
+    border-top-color:#06b6c9;
+    border-right-color: #06b6c9;
+    border-bottom-color:#06b6c9 ;
+    animation: animasi .3s linear infinite;
+
+}
+
+/* beri warana pada elemen label */
+.label{
+    background-color: #06b6c9;
+    padding:25px 0px;
+    color: white;
+}
+/* kita gunakan keyframe ini digunakan untuk setting gerakan */
+@keyframes animasi{
+    100% {
+        transform:rotate(360deg);
+    }
+}
+/* mengatur tampilan ketika perangkat yang akses memiliki lebar layar lebih kecil */
+@media screen and (max-width: 768px) {  
+    .container{
+        width: 90%;
+    }
+    header h1{
+        float: none;
+        text-align: center;
+    }
+    .header ul{
+        text-align:center;
+        float: none;
+    }
+    .box .col-4{
+        width: 100%;
+        float:none;
+        margin-bottom: 50px;
+    }
+}
+/*
+    * adalah selector untuk semua elemen dihalaman
+    # adalah selektor untuk id pada html
+    . adalah selektor untuk class pada html
+    jika langsung tag a{} maka selektor untuk seluruh tag a
+*/

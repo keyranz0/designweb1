@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DURIAN KING</title>
+    <!--style css eksternal-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--style logo css font awesome import all cssnya dahulu dari cdn font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- tambahkan cdn jquery untuk menambahkan script agar ketika loader jalan web tampil -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Loader -->
+    <div class="bg-loader">
+        <div class="loader"></div>
+    </div>
+    <!--Header-->
+    <div class="medsos">
+        <div class="container">
+            <ul>
+                <!--untuk logo stlah import dari font awesome,cari logo yang diinginkan kmudian copy-->
+                <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                <div class="login">
+                    <li><i class="fas fa-user-circle"> <a href="#"></a> </i></li>
+                    <li><i class="fas fa-sign-out-alt"> <a href="login.html">Login<a></i></li>
+                    </div>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <div>
+        <div class="container">
+            <div>
+                <h1 style="font-family: calibri;"><img src="durian king.jpeg" alt="durian king" width="40px" valign="top"><a href="home.html"> DURIAN KING</h1></a>
+            </div> 
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a class="active" href="about.html">ABOUT</a></li>
+                <li><a href="product.html">PRODUCT</a></li>
+                <li><a href="contact.html ">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="label">
+        <div class="container">
+            <p>ABOUT</p>
+        </div>
+
+    </section>
+
+    
+    <!-- about -->
+    <section class="about">
+        <div class="container">
+            <img src="https://pbs.twimg.com/profile_images/509882690951069696/dTYiQI3G.jpeg" alt="Logo Durian King" width="480px" align="Center" style="display: block;margin: auto;">
+            <br><br>
+            <h3>Video Kami:</h3>
+            <iframe  width="560" height="315" src="https://www.youtube.com/embed/OhxeQJIZHB0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block;margin: auto;"></iframe>
+            <h3>ABOUT</h3>
+            <p>Kami Adalah Perusahaan profesional yang bergerak dalam bidang konsumsi yang menyediakan berbagai macam jenis produk makanan yang terbuat dari buah durian, kami sebagai pelaku usaha selalu ingin meningkatkan mutu dan kualitas product kami yang berbahan dasar durian. Kami memiliki harapan agar kedepannya kami dapat mengembangkan dan berinvoasi untuk memajukan perkebunan durian di seluruh Indonesia, serta meningkatkan konsumsi buah durian di Indonesia.Kami Menjual berbagai macam produk baik itu makanan ataupun minuman,kami terus berinovasi untuk menyediakan konsumsi berbahan dasar durian.Salah satu produk kami yang terlaris adalah <b> sop durian</b>.
+            </p>
+
+            <h3>VISI</h3>
+            <p align="left"><strong>Menjadi perusahaan pertama yang membuat banyak orang menikmati durian</strong></p>
+
+            <h3>MISI</h3>
+            <p> <strong>  
+                1.Memberikan layanan prima dan solusi yang bernilai tambah kepada seluruh   nasabah, dan selaku mitra pilihan utama. <br>
+                2.Meningkatkan nilai investasi yang unggul bagi investor. <br>
+                3.Menciptakan kondisi terbaik bagi karyawan sebagai kebanggaan untuk berkarya dan berprestasi.</strong></p>
+        </div>
+    </section>
+
+    
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <small> Copyright &copy; 2024 - I Wayan Yoga Arthawan. All Rights Reserved</small>
+        </div>
+    </footer>
+<!-- script untuk menghilangkan loading agar halaman utama terbuka "apabila document sudah ready maka fungsi pada class bg loader di hide"-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".bg-loader").hide()
+        })
+    </script>
+
+
+</body>
+
+
+</html>
